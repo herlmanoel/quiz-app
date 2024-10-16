@@ -1,0 +1,13 @@
+org/questoes/domain/Conteudo.class
+org/questoes/rest/dto/CriarPerguntaDTO.class
+org/questoes/GreetingResource.class
+org/questoes/domain/Pergunta.class
+org/questoes/rest/dto/AlternativaDTO.class
+org/questoes/domain/repository/ConteudoRepository.class
+org/questoes/domain/repository/PerguntaRepository.class
+org/questoes/domain/repository/Tentativa.class
+org/questoes/rest/PerguntaRest.class
+org/questoes/domain/Alternativa.class
+org/questoes/domain/repository/AlternativaRepository.class
+org/questoes/service/PerguntaService.class
+org/questoes/MyEntity.class
