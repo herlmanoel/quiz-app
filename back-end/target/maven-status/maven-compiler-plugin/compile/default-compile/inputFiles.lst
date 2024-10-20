@@ -1,0 +1,13 @@
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/GreetingResource.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/MyEntity.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/domain/Alternativa.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/domain/Conteudo.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/domain/Pergunta.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/domain/repository/AlternativaRepository.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/domain/repository/ConteudoRepository.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/domain/repository/PerguntaRepository.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/domain/repository/Tentativa.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/rest/PerguntaRest.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/rest/dto/AlternativaDTO.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/rest/dto/CriarPerguntaDTO.java
+/Users/herlmanoel/git/questoes-api/src/main/java/org/questoes/service/PerguntaService.java

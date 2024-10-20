@@ -1,0 +1,9 @@
+acao -> 1010
+codigoCliente
+codigoProduto
+codigoModalidade
+textoSubModalidade
+valorAplicado
+siglaSistema
+dependenciaOrigem
+numeroContratoOrigem

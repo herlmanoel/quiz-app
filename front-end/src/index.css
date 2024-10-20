@@ -1,0 +1,255 @@
+:root {
+  --cor-primaria: #003a6d; /* Azul */
+  --cinza-claro: #f5f5f5; /* Cinza claro */
+  --cinza-medio: #dcdcdc; /* Cinza médio */
+  --cor-texto: #333333; /* Texto cinza escuro */
+  --cor-selecionado: #aed581; /* Verde claro para seleção */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--cinza-claro);
+  color: var(--cor-texto);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-container {
+  background-color: white;
+  
+  border-radius: 8px;
+  /* max-width: 600px; */
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-block {
+  margin: 15px 0;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-header {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--cinza-medio);
+  border-radius: 4px;
+}
+
+.toggle-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.toggle-title {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.toggle-content {
+  padding: 10px;
+  border-left: 2px solid var(--cor-primaria);
+  margin-left: 15px;
+  animation: expand 0.3s ease-in-out;
+}
+
+.selected {
+  background-color: var(--cor-selecionado) !important;
+  border-radius: 8px;
+}
+
+.conteudos-lista {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;  /* Remover bullets */
+}
+
+.iniciar-quiz-btn {
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.iniciar-quiz-btn:hover {
+  background-color: #002f56;
+}
+
+@keyframes expand {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
+
+.quiz-section {
+  margin-top: 20px;
+}
+/* aaa */
+/* App.css */
+
+.app-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters-section {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group h3 {
+  margin-bottom: 10px;
+}
+
+.toggle-buttons,
+.radio-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toggle-button {
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.radio-buttons label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.iniciar-quiz-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.iniciar-quiz-btn:hover {
+  background-color: #218838;
+}
+
+.conteudos-section {
+  margin-bottom: 20px;
+}
+
+.conteudos-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.toggle-block {
+  margin-bottom: 10px;
+}
+
+.toggle-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  margin-right: 5px;
+}
+
+.toggle-title {
+  font-weight: bold;
+}
+
+.toggle-content {
+  padding-left: 20px;
+  margin-top: 5px;
+  border-left: 2px solid #007bff;
+}
+
+/*  */
+
+/* App.css */
+
+/* ... estilos existentes ... */
+
+.filtered-questoes-section {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.questoes-lista {
+  list-style: none;
+  padding: 0;
+  max-height: 300px; /* Ajuste conforme necessário */
+  overflow-y: auto;
+}
+
+.questao-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.questao-item p {
+  margin: 0 0 5px 0;
+}
+
+.questao-item ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.questao-item ul li {
+  margin-bottom: 3px;
+}
+
+/* Opcional: Estilos para melhorar a aparência */
+.filtered-questoes-section h2 {
+  margin-bottom: 10px;
+}
+
+.filtered-questoes-section p {
+  margin-top: 10px;
+  color: #ff0000;
+}

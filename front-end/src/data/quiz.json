@@ -1,0 +1,223 @@
+[
+  {
+    "id": 1,
+    "conteudo_id": 2,
+    "pergunta": "How do you say 'Hello' in English?",
+    "alternativas": [
+      { "texto": "Goodbye", "correta": false },
+      { "texto": "Hello", "correta": true },
+      { "texto": "Please", "correta": false },
+      { "texto": "Yes", "correta": false }
+    ]
+  },
+  {
+    "id": 2,
+    "conteudo_id": 2,
+    "pergunta": "How do you introduce yourself?",
+    "alternativas": [
+      { "texto": "I am fine", "correta": false },
+      { "texto": "My name is John", "correta": true },
+      { "texto": "How are you?", "correta": false },
+      { "texto": "See you later", "correta": false }
+    ]
+  },
+  {
+    "id": 3,
+    "conteudo_id": 2,
+    "pergunta": "How do you greet someone in the morning?",
+    "alternativas": [
+      { "texto": "Good night", "correta": false },
+      { "texto": "Good morning", "correta": true },
+      { "texto": "Hello", "correta": false },
+      { "texto": "See you", "correta": false }
+    ]
+  },
+  {
+    "id": 4,
+    "conteudo_id": 2,
+    "pergunta": "Which of these is a formal greeting?",
+    "alternativas": [
+      { "texto": "Hi", "correta": false },
+      { "texto": "Good afternoon", "correta": true },
+      { "texto": "Bye", "correta": false },
+      { "texto": "Hey", "correta": false }
+    ]
+  },
+  {
+    "id": 5,
+    "conteudo_id": 2,
+    "pergunta": "What do you say when meeting someone for the first time?",
+    "alternativas": [
+      { "texto": "Nice to meet you", "correta": true },
+      { "texto": "See you later", "correta": false },
+      { "texto": "How are you?", "correta": false },
+      { "texto": "Goodbye", "correta": false }
+    ]
+  },
+  {
+    "id": 6,
+    "conteudo_id": 2,
+    "pergunta": "How do you ask someone's name?",
+    "alternativas": [
+      { "texto": "How old are you?", "correta": false },
+      { "texto": "What is your name?", "correta": true },
+      { "texto": "Where are you from?", "correta": false },
+      { "texto": "How are you?", "correta": false }
+    ]
+  },
+  {
+    "id": 7,
+    "conteudo_id": 2,
+    "pergunta": "What is a polite way to say 'thank you'?",
+    "alternativas": [
+      { "texto": "You're welcome", "correta": false },
+      { "texto": "Thanks a lot", "correta": true },
+      { "texto": "Sorry", "correta": false },
+      { "texto": "Please", "correta": false }
+    ]
+  },
+  {
+    "id": 8,
+    "conteudo_id": 2,
+    "pergunta": "How do you ask someone to repeat something?",
+    "alternativas": [
+      { "texto": "Can you repeat, please?", "correta": true },
+      { "texto": "See you", "correta": false },
+      { "texto": "How are you?", "correta": false },
+      { "texto": "Good night", "correta": false }
+    ]
+  },
+  {
+    "id": 9,
+    "conteudo_id": 2,
+    "pergunta": "What do you say when leaving a conversation?",
+    "alternativas": [
+      { "texto": "Goodbye", "correta": true },
+      { "texto": "Hello", "correta": false },
+      { "texto": "See you later", "correta": true },
+      { "texto": "Good night", "correta": false }
+    ]
+  },
+  {
+    "id": 10,
+    "conteudo_id": 2,
+    "pergunta": "What does 'Good morning' mean?",
+    "alternativas": [
+      { "texto": "Goodbye", "correta": false },
+      { "texto": "Hello", "correta": false },
+      { "texto": "A greeting in the morning", "correta": true },
+      { "texto": "A greeting at night", "correta": false }
+    ]
+  },
+
+  {
+    "id": 11,
+    "conteudo_id": 3,
+    "pergunta": "How do you ask someone's age?",
+    "alternativas": [
+      { "texto": "How old are you?", "correta": true },
+      { "texto": "Where are you from?", "correta": false },
+      { "texto": "What's your name?", "correta": false },
+      { "texto": "What do you do?", "correta": false }
+    ]
+  },
+  {
+    "id": 12,
+    "conteudo_id": 3,
+    "pergunta": "How do you ask someone's nationality?",
+    "alternativas": [
+      { "texto": "What do you do?", "correta": false },
+      { "texto": "How old are you?", "correta": false },
+      { "texto": "Where are you from?", "correta": true },
+      { "texto": "What’s your name?", "correta": false }
+    ]
+  },
+  {
+    "id": 13,
+    "conteudo_id": 3,
+    "pergunta": "How do you ask about someone's job?",
+    "alternativas": [
+      { "texto": "What’s your name?", "correta": false },
+      { "texto": "Where are you from?", "correta": false },
+      { "texto": "What do you do?", "correta": true },
+      { "texto": "How old are you?", "correta": false }
+    ]
+  },
+  {
+    "id": 14,
+    "conteudo_id": 3,
+    "pergunta": "How do you respond to 'Where are you from?'",
+    "alternativas": [
+      { "texto": "I am 25 years old", "correta": false },
+      { "texto": "I am from Brazil", "correta": true },
+      { "texto": "I am a student", "correta": false },
+      { "texto": "My name is John", "correta": false }
+    ]
+  },
+  {
+    "id": 15,
+    "conteudo_id": 3,
+    "pergunta": "How do you say your job?",
+    "alternativas": [
+      { "texto": "I am a teacher", "correta": true },
+      { "texto": "I am 30 years old", "correta": false },
+      { "texto": "I am from Brazil", "correta": false },
+      { "texto": "My name is John", "correta": false }
+    ]
+  },
+  {
+    "id": 16,
+    "conteudo_id": 3,
+    "pergunta": "How do you say your age?",
+    "alternativas": [
+      { "texto": "I am a doctor", "correta": false },
+      { "texto": "I am 25 years old", "correta": true },
+      { "texto": "I am from France", "correta": false },
+      { "texto": "My name is Lisa", "correta": false }
+    ]
+  },
+  {
+    "id": 17,
+    "conteudo_id": 3,
+    "pergunta": "How do you say your nationality?",
+    "alternativas": [
+      { "texto": "I am from Brazil", "correta": true },
+      { "texto": "I am 25 years old", "correta": false },
+      { "texto": "I am a student", "correta": false },
+      { "texto": "My name is John", "correta": false }
+    ]
+  },
+  {
+    "id": 18,
+    "conteudo_id": 3,
+    "pergunta": "What do you say when asked 'What’s your name?'",
+    "alternativas": [
+      { "texto": "I am a teacher", "correta": false },
+      { "texto": "I am from Brazil", "correta": false },
+      { "texto": "My name is Maria", "correta": true },
+      { "texto": "I am 25 years old", "correta": false }
+    ]
+  },
+  {
+    "id": 19,
+    "conteudo_id": 3,
+    "pergunta": "How do you ask someone's job?",
+    "alternativas": [
+      { "texto": "How old are you?", "correta": false },
+      { "texto": "Where are you from?", "correta": false },
+      { "texto": "What do you do?", "correta": true },
+      { "texto": "What’s your name?", "correta": false }
+    ]
+  },
+  {
+    "id": 20,
+    "conteudo_id": 3,
+    "pergunta": "What do you say when asked 'How old are you?'",
+    "alternativas": [
+      { "texto": "I am 25 years old", "correta": true },
+      { "texto": "I am a student", "correta": false },
+      { "texto": "My name is John", "correta": false },
+      { "texto": "I am from Brazil", "correta": false }
+    ]
+  }
+]

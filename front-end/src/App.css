@@ -1,0 +1,332 @@
+/* src/App.css */
+
+/* Definição das variáveis de cores em escala de cinza e azul */
+:root {
+  --cor-primaria: #003a6d;
+  --cor-secundaria: #002f56;
+  --cinza-claro: #f5f5f5;
+  --cinza-medio: #dcdcdc;
+  --cinza-escuro: #333333;
+  --cor-correta: #28a745;
+  --cor-incorreta: #dc3545;
+  --fundo-pagina: #f0f0f0;
+  --fundo-container: #ffffff;
+  --cor-texto: #333333;
+  --cor-texto-secundario: #002f56;
+  --cor-botao: #003a6d;
+  --cor-botao-hover: #002f56;
+  --cor-botao-desabilitado: #b2b2b2;
+  --cor-finalizar: #dc3545;
+  --cor-finalizar-hover: #c82333;
+  --cor-reiniciar: #003a6d;
+  --cor-reiniciar-hover: #002f56;
+}
+
+/* Reset básico para garantir consistência entre navegadores */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--fundo-pagina);
+  color: var(--cor-texto);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contêiner principal do aplicativo */
+.app-container {
+  display: flex;
+  background-color: var(--fundo-container);
+  border-radius: 8px;
+  padding: 40px 30px;
+  width: 100%; /* Aumentei para 80% da largura da tela */
+  max-width: 1100px; /* Aumentada a largura máxima para telas maiores */
+  min-height: 80vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+}
+
+/* Media Queries para Responsividade
+@media (max-width: 1200px) {
+  .app-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 15px;
+  }
+} */
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: var(--cor-primaria);
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* Container do quiz */
+.quiz-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Barra de progresso */
+.progress-bar {
+  width: 100%;
+  background-color: var(--cinza-medio);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  height: 15px;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--cor-primaria);
+  transition: width 0.3s ease;
+}
+
+/* Pergunta */
+.pergunta {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: var(--cor-texto-secundario);
+  font-weight: 500;
+}
+
+/* Lista de alternativas */
+.alternativas-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Botão de alternativa */
+.alternativa-btn {
+  background-color: #ffffff;
+  border: 1px solid var(--cinza-medio);
+  color: var(--cor-texto);
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  width: 100%;
+  text-align: left;
+  font-size: 1em;
+}
+
+.alternativa-btn:hover {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  border-color: var(--cor-secundaria);
+}
+
+.alternativa-btn.selecionado {
+  background-color: var(--cinza-medio);
+  color: var(--cor-texto-secundario);
+  border-color: var(--cor-secundaria);
+}
+
+/* Botões de navegação */
+.botoes-navegacao {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.navegacao-btn {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+  font-size: 0.95em;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.navegacao-btn:first-child {
+  margin-left: 0;
+}
+
+.navegacao-btn:last-child {
+  margin-right: 0;
+}
+
+.navegacao-btn:hover:not(:disabled) {
+  background-color: var(--cor-secundaria);
+}
+
+.navegacao-btn:disabled {
+  background-color: var(--cor-botao-desabilitado);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.navegacao-btn.finalizar {
+  background-color: var(--cor-finalizar);
+}
+
+.navegacao-btn.finalizar:hover:not(:disabled) {
+  background-color: var(--cor-finalizar-hover);
+}
+
+.quiz-container h2 {
+  font-size: 15px;
+  display: block;
+  text-align: right;
+}
+
+/* Estado finalizado do quiz */
+.quiz-finalizado {
+  text-align: center;
+}
+
+.quiz-finalizado h2 {
+  color: var(--cor-primaria);
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.quiz-finalizado p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: var(--cor-texto-secundario);
+}
+
+/* Tabela de resultados */
+.resultado-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.resultado-tabela th,
+.resultado-tabela td {
+  border: 1px solid var(--cinza-medio);
+  padding: 10px;
+  text-align: left;
+  font-size: 0.95em;
+}
+
+.resultado-tabela th {
+  background-color: var(--cinza-claro);
+  color: var(--cor-texto-secundario);
+}
+
+.resultado-tabela tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.status-correto {
+  color: var(--cor-correta);
+  font-weight: 500;
+}
+
+.status-incorreta {
+  color: var(--cor-incorreta);
+  font-weight: 500;
+}
+
+/* Botão para reiniciar o quiz */
+.btn-reiniciar {
+  background-color: var(--cor-reiniciar);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s, opacity 0.2s;
+  font-size: 0.95em;
+}
+
+.btn-reiniciar:hover {
+  background-color: var(--cor-reiniciar-hover);
+}
+
+/* Container para tabelas responsivas */
+.tabela-container {
+  overflow-x: auto;
+}
+
+/* Indicadores de Foco para Acessibilidade */
+.alternativa-btn:focus,
+.navegacao-btn:focus,
+.btn-reiniciar:focus {
+  outline: 2px solid var(--cor-secundaria);
+  outline-offset: 2px;
+}
+
+/* Responsividade para dispositivos menores
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .pergunta {
+    font-size: 1.1em;
+  }
+
+  .alternativa-btn {
+    padding: 10px 15px;
+    font-size: 0.95em;
+  }
+
+  .navegacao-btn,
+  .btn-reiniciar {
+    padding: 8px 15px;
+    font-size: 0.85em;
+  }
+
+  .resultado-tabela th,
+  .resultado-tabela td {
+    padding: 8px;
+    font-size: 0.85em;
+  }
+
+  .resultado-tabela th,
+  .resultado-tabela td {
+    white-space: nowrap;
+  }
+} */
